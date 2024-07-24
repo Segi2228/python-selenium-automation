@@ -5,6 +5,7 @@ Feature: Add item to cart tests
     Given Open Target main page
     When Search for teatree oil
     Then Click on Add to Cart button
+    And store product name
     Then Add item to cart
     #Then Open Cart page
     Then Verify cart has the item

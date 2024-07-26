@@ -4,7 +4,8 @@ Feature: Test Scenarios for  Target main page
   Scenario: Search for a product on target
     Given Open Target main page
     When  Search for product
-    # Then  Verify search worked
+#    Then  Verify search shows for 'coffee'
+#    Then Verify correct search results URL opens for coffee
 
 
   Scenario: Sign in page opens

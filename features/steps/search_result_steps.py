@@ -12,9 +12,9 @@ def verify_search_result(context, expected_product):
     # assert expected_text in actual_text, f'Expected {expected_text} but got {actual_text}'
     # sleep(5)
 
-    context.app.search_results_page.verify_text()
+    context.app.search_results_page.verify_search_results(expected_product)
 
 
 @then('Verify correct search results URL opens for {expected_product}')
 def verify_search_url(context, expected_product):
-    context.app.search_results_page.verify_url()
+    context.app.search_results_page.verify_url(expected_product)

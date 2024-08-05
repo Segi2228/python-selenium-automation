@@ -3,15 +3,15 @@ Feature: Test Scenarios for  Target main page
 
   Scenario: Search for a product on target
     Given Open Target main page
-    When  Search for product
-#    Then  Verify search shows for 'coffee'
+    When  Search for coffee
+#    Then  Verify search shows for coffee
 #    Then Verify correct search results URL opens for coffee
 
 
   Scenario: Sign in page opens
      Given Open Target main page
      When Click on Sign In icon
-     When Click on Sign In icon again
+     #When Click on Sign In icon again
      #Then Sign in form opens
 
 

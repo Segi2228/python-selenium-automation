@@ -7,5 +7,6 @@ Feature: Add item to cart tests
     Then Click on Add to Cart button
     And store product name
     Then Add item to cart
+    And View cart
     #Then Open Cart page
     Then Verify cart has the item

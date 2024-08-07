@@ -11,12 +11,12 @@ Feature: Test Scenarios for  Target main page
   Scenario: Sign in page opens
      Given Open Target main page
      When Click on Sign In icon
-     #When Click on Sign In icon again
-     #Then Sign in form opens
+     When Click on Sign In icon again
+     Then Sign in form opens
 
 
   Scenario: Empty cart message displays
     Given Open Target main page
     When  Click on Cart icon
-    #Then  Your cart is empty message shown
+    Then  Your cart is empty message shown
 

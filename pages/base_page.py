@@ -63,3 +63,22 @@ class Page:
     def verify_partial_url(self, expected_partial_url):
        actual_url = self.driver.current_url
        assert expected_partial_url in actual_url, f'Expected {expected_partial_url} but got {actual_url}'
+
+    def get_current_window(self):
+        window = self.driver.current_window_handle
+        print(f"Current window is {window}")
+        return window
+
+    def switch_to_new_window(self):
+        self.wait.until(EC.new_window_is_opened)
+        windows = self.driver.window_handles
+        print(f"All windows {windows}")
+        self.driver.switch_to.window(windows[1])
+        print(f"New window is {windows[1]}")
+
+    def switch_to_window_by_id(self, window_id):
+        self.driver.switch_to.window(window_id)
+        print(f"Switched to window: {window_id}")
+
+    def close(self):
+        self.driver.close()

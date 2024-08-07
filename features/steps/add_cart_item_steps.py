@@ -31,7 +31,7 @@ def click_cart(context):
 # another way to verify the product in side nav is the one in cart, we can store the prod name
 @then('store product name')
 def store_product_name(context):
-    context.app.add_to_cart_page.store_product_name()
+    context.app.add_to_cart_page.store_product_name
     # context.driver.wait.until(EC.visibility_of_element_located(SIDE_NSV_PRODUCT_NAME))
     # context.product_name = context.driver.find_element(*SIDE_NSV_PRODUCT_NAME).text
 

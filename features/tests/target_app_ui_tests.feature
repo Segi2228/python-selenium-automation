@@ -13,7 +13,9 @@ Feature: Tests for Target App page
 
   Scenario: User can open and close Terms and Conditions from sign in page
     Given Open Target App page
-    And  Store original window
+    When Click on Sign In icon
+    When Click on Sign In icon again
+    Then  Store original window
     Then Click on Target terms and conditions link
     And  Switch to new opened window
     Then Verify Terms and Conditions page is opened

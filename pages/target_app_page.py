@@ -9,7 +9,8 @@ class TargetAppPage(Page):
      self.open_url('https://www.target.com/c/target-app/')
 
     def click_pp_link(self):
-        self.click(*self.PP_LINK)
+        self.wait_and_click(*self.PP_LINK)
+
 
     def click_cc_link(self):
         self.click(*self.TC_LINK)

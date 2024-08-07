@@ -35,3 +35,22 @@ def close(context):
 @then('Return to original window')
 def return_to_original_window(context):
     context.app.privacy_policy_page.switch_to_window_by_id(context.original_window)
+
+
+  # terms and condition page steps
+
+@then('Click on Target terms and conditions link')
+def click_tc_link(context):
+ context.app.target_app_page.click_cc_link()
+
+@then('Switch to new opened window')
+def switch__new_window(context):
+ context.app.target_app_page.switch_to_new_window()
+
+
+@then('Verify Terms and Conditions page is opened')
+def verify_tc_opened(context):
+  context.app.terms_and_conditions_page.verify_tc_url()
+
+
+

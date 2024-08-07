@@ -9,3 +9,13 @@ Feature: Tests for Target App page
     Then Verify Privacy Policy page opened
     And  Close current page
     And  Return to original window
+
+
+  Scenario: User can open and close Terms and Conditions from sign in page
+    Given Open Target App page
+    And  Store original window
+    Then Click on Target terms and conditions link
+    And  Switch to new opened window
+    Then Verify Terms and Conditions page is opened
+    And  Close current page
+    And Return to original window
